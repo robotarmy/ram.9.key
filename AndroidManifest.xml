@@ -1,5 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cc.ram9.key">
-    <application android:label="@string/ime_name">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cc.ram9.key" android:versionCode="10"  android:versionName="@string/ime_name">
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="10"></uses-sdk>
+    <application android:label="@string/ime_name" android:icon="@drawable/ram">
         <service android:name="cc.ram9.key.SoftKeyboard"
                 android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
